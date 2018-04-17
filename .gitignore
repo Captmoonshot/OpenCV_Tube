@@ -4,6 +4,8 @@
 *.mov
 *.wmv
 
+CFE_OpenCV/
+
 old/
 notes.txt
 description.txt

@@ -1,9 +1,10 @@
+import os
 import numpy as np 
 import cv2
 
-filename = 'video.avi' # .avi .mp4
-frames_per_second = 24.0
-res = '720p'
+filename = 'video.mp4' # .avi .mp4
+frames_per_second = 30.0
+my_res = '720p'
 
 # Set resolution for the video capture
 # Function adapted from https://kirr.co/0l6qmh
@@ -42,11 +43,15 @@ def get_video_type(filename):
 	filename, ext = os.path.splitext(filename)
 	if ext in VIDEO_TYPE:
 		return VIDEO_TYPE[ext]
-	return VIDEO_TYPE['avi']
+	return VIDEO_TYPE['mp4']
 
 
 cap = cv2.VideoCapture(0)
-out = cv2.VideoWriter(filename, get_video_type(filename), 25, get_dims(cap, res))
+dims = get_dims(cap, res=my_res)
+video_type_cv2 = get_video_type(filename)
+
+
+out = cv2.VideoWriter(filename, video_type_cv2, frames_per_second, dims)
 
 
 while(True):

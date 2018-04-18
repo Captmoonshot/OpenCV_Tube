@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"frame",
+				"frames_per_second"
+			],
+			[
+				"vid",
+				"video_type_cv2"
+			],
+			[
+				"get",
+				"get_video_type"
+			],
+			[
+				"V",
+				"VIDEO_TYPE"
+			],
+			[
+				"change",
+				"change_res"
+			],
+			[
+				"S",
+				"STD_DIMENSIONS"
+			],
+			[
 				"f",
 				"frame"
 			],
@@ -34,10 +58,6 @@
 			[
 				"pub",
 				"pub_date"
-			],
-			[
-				"S",
-				"SlugField"
 			]
 		]
 	},
@@ -77,10 +97,13 @@
 	},
 	"expanded_folders":
 	[
-		"/Volumes/Seagate Backup Plus Drive/Dev/OpenCV_Tube"
+		"/Users/sammylee/Desktop/OpenCV_Tube"
 	],
 	"file_history":
 	[
+		"/Volumes/Seagate Backup Plus Drive/Dev/OpenCV_Tube/base.py",
+		"/Volumes/Seagate Backup Plus Drive/Dev/OpenCV_Tube/record-video.py",
+		"/Volumes/Seagate Backup Plus Drive/Dev/OpenCV_Tube/change-res.py",
 		"/Volumes/Seagate Backup Plus Drive/Dev/OpenCV_Tube/camera-test.py",
 		"/Users/sammylee/Desktop/susanli_MLwithPython/Consumer_Complaints.csv",
 		"/Users/sammylee/mldev/fruit_data_with_colors.txt",
